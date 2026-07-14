@@ -1,0 +1,54 @@
+name: area_film_uas
+description: "Area Film UAS"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  http: ^1.5.0
+  cached_network_image: ^3.4.1
+  google_fonts: ^6.3.1
+  url_launcher: ^6.3.0
+  shimmer: ^3.0.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  intl: ^0.19.0
+  youtube_player_flutter: ^9.1.1
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+
+# 🔥 FIX: Sekarang posisinya sudah benar-benar di luar blok 'flutter:' 
+# dan rata kiri sempurna agar bisa dieksekusi oleh generator native splash.
+flutter_native_splash:
+  color: "#111111" 
+  image: assets/images/logo2.png 
+  android_gravity: center
+  ios_content_mode: center
+  android_12:
+    color: "#111111"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo2.png"
+  adaptive_icon_background: "#000000" # Latar hitam pekat untuk ikon HP
+  adaptive_icon_foreground: "assets/images/logo2.png"
+  min_sdk_android: 21
