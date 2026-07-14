@@ -83,6 +83,7 @@ Packages
 
 ## Project Structure
 
+```text
 area_film_uas/
 ├── android/ : Folder konfigurasi untuk sistem Android
 ├── assets/ : Folder untuk menyimpan aset gambar, ikon, atau font
